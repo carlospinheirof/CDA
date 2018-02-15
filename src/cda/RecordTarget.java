@@ -3,11 +3,12 @@ package cda;
 import pessoas.Paciente;
 
 public class RecordTarget {
-	String recordtarget;
+	private String recordtarget;
+	private PatientRole patientrole = new PatientRole();
 	public String createRecortTarget(Paciente paciente){
 		recordtarget = "<recordTarget>" + "\n";
-			
-		recordtarget =recordtarget + "</recordTarget>";
+			recordtarget = recordtarget + patientrole.createPatientRole(paciente);
+		recordtarget = recordtarget + "</recordTarget>";
 		return recordtarget;
 	}
 }
