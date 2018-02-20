@@ -9,6 +9,7 @@ public class PatientRole {
 		   <addr>rua ufal, n 465</addr>
 		   <telecom value="+55(81)99954684"/>
 		*/
+		private Patient patient = new Patient();
 	public String createPatientRole(Paciente paciente){
 		
 		patientrole = "<patientRole>" + "\n";
@@ -28,6 +29,6 @@ public class PatientRole {
 		}else{
 			patientrole = patientrole + "<telecom nullFlavor = \"UNK\">" + "\n";
 		}
-		return patientrole + "</patientRole>" + "\n";
+		return patientrole + patient.createPatient(paciente) + "</patientRole>" + "\n";
 	}
 }

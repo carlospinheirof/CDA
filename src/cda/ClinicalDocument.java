@@ -12,7 +12,7 @@ public class ClinicalDocument {
 	
 	public String CreateCda(Paciente paciente){
 		cda = cda + "\n";
-		cda = cda + RecordTarget.createRecortTarget(paciente) + "\n";
+		cda = cda + RecordTarget.createRecortTarget(paciente);
 		
 		cda = cda + "</ClinicalDocument>";
 		return cda;
