@@ -1,5 +1,7 @@
 package pessoas;
 
+import java.util.LinkedList;
+
 public class Paciente {
 	private String id;
 	private String nome;
@@ -9,6 +11,24 @@ public class Paciente {
 	private String genero;
 	private String n_ano, n_mes, n_dia;
 	private String localnascimento;
+	private String aplicacao;
+	public String getAplicacao() {
+		return aplicacao;
+	}
+
+	public void setAplicacao(String aplicacao) {
+		this.aplicacao = aplicacao;
+	}
+
+	public LinkedList<Components_p> getComponents() {
+		return components;
+	}
+
+	public void setComponents(LinkedList<Components_p> components) {
+		this.components = components;
+	}
+
+	private LinkedList<Components_p> components;
 	
 	public String getLocalnascimento() {
 		return localnascimento;

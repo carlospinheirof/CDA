@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' classCode='DOCCLIN'>
+<realmCode code='UV'/>
+<typeId root='2.16.840.1.113883.1.3' extension='POCD_HD000040'/>
+<templateId root='2.16.840.1.113883.10.20.1'/> 
+<id root='M345' extension='2.16.840.1.113883.3.933'/> 
+<code code='410.9' displayName='Diagnostico utilizando MultCare' codeSystem='2.16.840.1.113883.6.103' codeSystemName='ICD-9-CM'/> 
+<effectiveTime value="20171003"/>
+<confidentialityCode code="N"  displayName='Normal' codeSystem='2.16.840.1.113883.5.25' codeSystemName='Confidentiality'/>
+<setId extension="MM1" root="2.16.840.1.113883.3.933"/>
+<versionNumber value="1"/>
+<copyTime value='20171003'/>
+<recordTarget>
+	<patientRole>
+    		<id extension="12345" root="2.16.840.1.113883.3.933"/>
+		<addr>Endereço do paciente</addr>
+		<telecom value='+55(082)9996-5599'/>
+		<patient>
+			<name>
+				<given>Primeiro nome paciente</given>
+				<family>sobrenome</family>
+			</name>
+			<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+			<birthTime value="20170924"/>
+			<maritalStatusCode code='nullFlavor'/>
+			<religiousAffiliationCode code='nullFlavor'/>
+			<raceCode code='nullFlavor'/>
+			<ethnicGroupCode code='nullFlavor'/>
+			<birthplace>
+				<place><name>…</name><addr>…</addr></place>
+			</birthplace> 
+		</patient>
+		<providerOrganization>
+			<id extension="M555" root="2.16.840.1.113883.3.933"/>
+   		</providerOrganization>
+	</patientRole>
+</recordTarget>
+<author>
+   <time value="20171003"/>
+   <assignedAuthor>
+     	 <id root='2.16.840.1.113883.3.933' extension='CRM456546'/>
+	 <assignedAuthoringDevice>
+		<softwareName>…</softwareName>
+	</assignedAuthoringDevice>
+   </assignedAuthor>	
+</author>  
+<custodian>
+	<assignedCustodian>
+		<representedCustodianOrganization>
+			<id extension="M555" root="2.16.840.1.113883.3.933"/>
+			<name>MultCare</name>
+		</representedCustodianOrganization>
+	</assignedCustodian>
+</custodian>
+<legalAuthenticator>
+	<time value="20171003"/>
+	<signatureCode code="S"/>
+	<assignedEntity>
+		<id extension="CRM456546" root="2.16.840.1.113883.3.933"/>
+		<representedOrganization>
+			<name> ESC- ufal </name>
+		</representedOrganization>
+	</assignedEntity>
+</legalAuthenticator>
+<relatedDocument typeCode="RPLC">
+	<parentDocument>
+		<id extension="a123" root="2.16.840.1.113883.3.933"/>
+		<setId extension="BB35" root="2.16.840.1.113883.3.933"/>
+		<versionNumber value="1"/>
+	</parentDocument>
+</relatedDocument>
+
+<componentOf>
+	<encompassingEncounter>
+			<id root="1.3.6.1.4.1.16517" extension="LAB ESC"></id>
+			<effectiveTime value="20180307"></effectiveTime>
+			<responsibleParty>
+				<assignedEntity>
+					<id nullFlavor="UNK"></id>
+					<addr>
+						UFAL
+					</addr>
+					<telecom value="tel:(617)732-9900" use="WP"></telecom>
+					<representedOrganization>
+						<name> ESC- ufal </name>
+					</representedOrganization>
+				</assignedEntity>
+			</responsibleParty>
+			<location>
+				<healthCareFacility>
+					<id root="1.3.6.1.4.1.16517" extension="LAB ESC"></id>
+					<location>
+						<name>ESC</name>
+						<addr>
+							UFAL
+						</addr>
+					</location>
+				</healthCareFacility>
+			</location>
+		</encompassingEncounter>
+</componentOf>                 
+<component>
+<structuredBody>
+<languageCode code='pt-BR'/>
+<component>
+  <section classCode="DOCSECT" moodCode="EVN">
+	<templateId root="2.16.840.1.113883.10.20.22.2.5.1"></templateId>
+	<code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problema atual"></code>
+   <title>Histórico da doença atual</title> 
+    <text>
+	Problema atual:Ditar como está o histórico do paciente em relação a doença que ele possui.		
+    </text>      
+  </section>
+</component>
+<component>
+    <section>
+      <title>Histórico médico passado</title>
+      <text>
+        <list>
+             <item><content>Nome da doença</content></item>
+        </list>
+      </text>       
+    </section>
+</component>
+
+<component>
+    <section>
+      <title>Medicamentos</title>
+      <text>
+        <list>
+             <item><content>Nome do medicamento : dosagem</content></item>
+        </list>
+      </text>       
+    </section>
+</component>
+<component>
+    <section>
+      <title>Alergias</title>
+      <text>
+        <list>
+             <item><content>Alergia - reação</content></item>
+        </list>
+      </text>    
+    </section>
+</component>
+<component>
+    <section>				
+      	<title>Histórico familiar</title>
+      	<text>
+       	 <list>
+      	       <item><content>problemas</content></item>
+         </list>
+     	</text>      
+    </section>
+</component>
+                                
+<component>
+    <section>
+      <title>Métrica físico</title>
+      <text>
+        <list>
+             <item><content>Altura: 1,77m</content></item>
+            <item><content>Peso: 77Kg</content></item>
+        </list>
+      </text>       
+    </section>
+</component>
+                                
+<component>
+    <section>
+      <title>Exames de laboratório</title>
+      <text>
+        <list>
+             <item><content>Hormônio A : quantidade</content></item>
+        </list>
+      </text>       
+    </section>
+</component>
+                                    
+<component>
+    <section>
+      <title>Diagnóstico</title>
+      <text>
+        <list>
+             <item><content>Diabetes tipo 2</content></item>
+        </list>
+      </text>   
+    </section>
+</component>  
+<component>
+    <section>
+      <title>Tratamento</title>
+      <text>
+	<list>
+             <item><content>Tomar remédio três vezes por dia.</content></item>
+        </list>
+      </text>   
+    </section>
+</component>
+</structuredBody>
+</component>
+</ClinicalDocument>
