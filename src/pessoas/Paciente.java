@@ -12,6 +12,25 @@ public class Paciente {
 	private String n_ano, n_mes, n_dia;
 	private String localnascimento;
 	private String aplicacao;
+	private String nomelab;
+	private String enderecolab;
+	
+	public String getNomelab() {
+		return nomelab;
+	}
+
+	public void setNomelab(String nomelab) {
+		this.nomelab = nomelab;
+	}
+
+	public String getEnderecolab() {
+		return enderecolab;
+	}
+
+	public void setEnderecolab(String enderecolab) {
+		this.enderecolab = enderecolab;
+	}
+
 	public String getAplicacao() {
 		return aplicacao;
 	}
