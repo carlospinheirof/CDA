@@ -14,6 +14,7 @@ public class ClinicalDocument {
 	private Custodian Custodian = new Custodian();
 	private Author Author = new Author();
 	private LegalAuthenticator LegalAuthenticator = new LegalAuthenticator();
+	private RelatedDocument RelatedDocument = new RelatedDocument();
 	
 	public String CreateCda(Paciente paciente){
 		cda = cda + "\n";
@@ -21,6 +22,7 @@ public class ClinicalDocument {
 		cda = cda + Author.createAuthor(paciente); 
 		cda = cda + Custodian.createCustodian(paciente);
 		cda = cda + LegalAuthenticator.createLegalAuthenticator(paciente);
+		cda = cda + RelatedDocument.createRelatedDocument(paciente);
 		cda = cda + "</ClinicalDocument>";
 		return cda;
 	}
